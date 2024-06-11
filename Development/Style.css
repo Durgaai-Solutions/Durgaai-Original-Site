@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --Primary-Color: #87A922;
+    --Secondary-Color: #FCDC2A;
+    --Primary-Font: #240A34;
+    --Secondary-Font: #191A19;
+    --Button: limegreen;
+}
+
+*::before,
+*::after{
+	scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: #ffffff;
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+    background: var(--Secondary-Color);
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+}
+
+nav .Nav__logo a{
+    font-size: 2rem;
+    font-weight: 600;
+    color: orange;
+    text-decoration: none;
+}
+
+.Container{
+    max-width: 400px;
+    padding: 2rem;
+    margin: auto;
+    display: grid;
+    color: var(--Primary-Font);
+}
+
+.Header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.Header h1{
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.Header h3{
+    color: purple;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.Header p{
+    display: none;
+    font-variation-settings: 1rem;
+}
+
+.Header button{
+    display: none;
+    background: var(--Button);
+    color: #ffffff;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.Header button:hover{
+    background: var(--Secondary-Color);
+    color: var(--Primary-Font);
+}
+
+.Container img{
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.Footer{
+    display: grid;
+    gap: 2rem;
+    place-content: center;
+}
+
+.Footer p{
+    font-variation-settings: 1rem;
+    margin: auto;
+}
+
+.Footer button{
+    background: var(--Button);
+    color: #ffffff;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.Footer button:hover{
+    background: var(--Secondary-Color);
+    color: var(--Primary-Font);
+}
+
+
+@media (min-width: 970px){
+    nav{
+        max-width: 1000px;
+    }
+    .Header p{
+        display: grid;
+        margin-top: 150px;
+    }
+    .Container{
+        max-width: 1200px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Container img{
+        max-width: 550px;
+        grid-area: 1/1/3/2;
+    }
+    .Footer{
+        display: none;
+    }
+    .Header p{
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    .Header button{
+        display: grid;
+        background: var(--Button);
+        color: #ffffff;
+        padding: 1rem;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .Header button:hover{
+        background: var(--Secondary-Color);
+        color: var(--Primary-Font);
+    }
+}
+
+
+@media (min-width : 1204px){
+    .Container{
+        column-gap: 5rem;
+    }
+    .Header h1{
+        font-size: 6rem;
+    }
+    .Header h3{
+        font-size: 3rem;
+    }
+    .Header p{
+        font-variation-settings: 1rem;
+    }
+    .Header button{
+        display: grid;
+        background: var(--Button);
+        color: #ffffff;
+        padding: 1rem;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .Header button:hover{
+        background: var(--Secondary-Color);
+        color: var(--Primary-Font);
+    }
+}

@@ -808,7 +808,7 @@ body{
 }
 
 @media (max-width: 920px){
-    .Service .Content0 h1,{
+    .Service .Content0 h1{
         margin-top: -20px;
     }
     .Service .Content0 p{

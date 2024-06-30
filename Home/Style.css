@@ -20,7 +20,7 @@
 *,
 *::before,
 *::after{
-	scroll-behavior: smooth;
+	  scroll-behavior: smooth;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -812,7 +812,7 @@ body{
         margin-top: -20px;
     }
     .Service .Content0 p{
-        margin-top: -40px;
+        margin-top: -60px;
         margin-bottom: 10px;
     }
     .Cards .Card0{
